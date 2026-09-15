@@ -59,6 +59,7 @@ int main()
 	int dias = 0;
 	int horas = 0;
 	int minutos = 0;
+	double temperatura = 0;
 
 	cout << "Digite seu nome: ";
 	cin >> nome;
@@ -67,11 +68,27 @@ int main()
 	dias = idade * 365;
 	horas = dias * 24;
 	minutos = horas  * 60;
+
 	cout << "Sua idade em dias e: " << dias << endl;
 	cout << "Sua idade em horas e: " << horas << endl;
 	cout << "Sua idade em minutos e: " << minutos << endl;
+	
 
 	cout << "Qualquer tecla para sair...";
+	//ATIVIDADE 2 — Conversão de Temperatura//
+	double Celsius = 0;
+
+	cout << "Digite uma temperatura em Celsius: ";
+	cin >> Celsius;
+
+	double Fahrenheit = Celsius * 1.8 + 32;
+
+	cout << "A temperatura em Fahrenheit é:" << Fahrenheit << endl;
+
+	double Kelvin = Celsius + 273.15;
+
+	cout << "A temperatura em Kelvin é:" << Kelvin << endl;
+
 	system("pause"); // somente no Windows
 
 
