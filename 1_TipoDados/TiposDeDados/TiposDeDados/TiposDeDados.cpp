@@ -74,7 +74,7 @@ int main()
 	cout << "Sua idade em minutos e: " << minutos << endl;
 	
 
-	cout << "Qualquer tecla para sair...";
+	
 	//ATIVIDADE 2 — Conversão de Temperatura//
 	double Celsius = 0;
 
@@ -88,6 +88,33 @@ int main()
 	double Kelvin = Celsius + 273.15;
 
 	cout << "A temperatura em Kelvin é:" << Kelvin << endl;
+
+
+
+	//ATIVIDADE 3 — Calculadora de Segundos//
+	long segundos = 0;
+	cout << "Digite o numero de segundos: ";
+	cin >> segundos;
+
+	long restodia = segundos / 86400;
+	segundos = segundos % 86400;
+
+
+	long restohora = segundos / 3600;
+	segundos = segundos % 3600;
+
+
+	long restomin = segundos/ 60;
+
+
+	long restoSEC = segundos % 60;
+
+	cout << "Dias: " << restodia << endl;
+	cout << "Horas: " << restohora << endl;
+	cout << "Minutos: " << restomin << endl;
+	cout << "Segundos: " << segundos << endl;
+
+	cout << "Qualquer tecla para sair...";
 
 	system("pause"); // somente no Windows
 
